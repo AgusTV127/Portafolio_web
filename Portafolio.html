@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio_ATV</title>
+    <link rel="stylesheet" href="portafolio.css">
+</head>
+<body>
+
+<header>
+    <h1>Mi Portafolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p contenteditable="true" class="editable">Este es mi portafolio :)</p>
+</section>
+
+<section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="Captura1.PNG" alt="Proyecto 1">
+            <img src="Captura2.PNG" alt="Proyecto 2">
+            <img src="Captura3.PNG" alt="Proyecto 3">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <form id="contactForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Mi Portafolio</p>
+</footer>
+
+<script src="porta.js"></script>
+</body>
+</html>

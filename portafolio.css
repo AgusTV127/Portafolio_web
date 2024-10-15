@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #555555;
+}
+
+header {
+    background-color: #0778d4;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #bebebe;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    position: relative; /* Para posicionar los botones de navegación */
+    max-width: 100%; /* Permitir que el carrusel ocupe el ancho máximo posible */
+    margin: auto; /* Centrar el carrusel en su contenedor */
+    overflow: hidden; /* Ocultar el contenido que se sale del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    
+}
+
+.carousel-images {
+    display: flex; /* Alinear las imágenes en una fila */
+    flex-wrap: nowrap; /* Evitar que las imágenes se envuelvan a la siguiente línea */
+    overflow-x: auto; /* Permitir el desplazamiento horizontal */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    scroll-behavior: smooth; /* Suavizar el desplazamiento */
+}
+
+.carousel-images img {
+    max-width: 100%; /* Limitar el ancho máximo a 100% del contenedor */
+    height: auto; /* Mantener la proporción original de las imágenes */
+    max-height: 400px; /* Limitar la altura máxima de las imágenes */
+    object-fit: cover; /* Cubrir el contenedor sin deformar la imagen */
+    margin: 10px; /* Margen alrededor de cada imagen */
+    flex-shrink: 0; /* Evitar que las imágenes se reduzcan en tamaño */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(114, 107, 107, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
